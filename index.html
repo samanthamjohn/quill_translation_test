@@ -1,0 +1,636 @@
+<div id="main-content" class="page">
+  <style>
+table {
+margin: 20px;
+}
+th {
+border: 3px solid lightgray;
+padding: 10px;
+}
+td {
+padding: 10px;
+border: 3px solid lightgray;
+}
+</style>
+<h1>Comparing translations</h1>
+<table>
+<thead>
+  <tr><th>english</th>
+  <th>spanish (open AI) </th>
+  <th>Spanish (Gengo) </th>
+  <th>type</th>
+</tr></thead>
+<tbody>
+  <tr>
+      <td><p>When you have a plural word that ends in <em>s</em> (like <em>players</em>), show ownership by putting an apostrophe after the <em>s</em>.<br> </p></td>
+      <td><p>Cuando tengas una palabra en plural que termina en <em>s</em> (como <em>players</em>), muestra la posesión colocando un apóstrofo después de la <em>s</em>.<br> </p></td>
+      <td><p>Cuando una palabra en plural termine en <em>s</em> (como <em>players</em>), coloca un apóstrofo después de la <em>s</em> para indicar posesión.<br> </p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>When there is more than one <em>person</em>, use <em>people.</em></p></td>
+      <td><p>Cuando hay más de una <em>person</em>, usa <em>people.</em></p></td>
+      <td><p>Cuando haya más de una <em>person</em>, utiliza <em>people.</em></p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>When there is more than one <em>woman</em>, use <em>women.</em></p></td>
+      <td><p>Cuando hay más de una <em>woman</em>, usa <em>women.</em></p></td>
+      <td><p>Cuando haya más de una <em>woman</em>, utiliza <em>women.</em></p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Names for groups of things (<em>team</em>,<em> family</em>,<em> herd</em>,<em> choir</em>,<em> flock</em>) take a singular pronoun (<em>it</em>).</p><p>When members of a group are doing things as individuals, the pronoun is plural (<em>they</em>).</p></td>
+      <td><p>Nombres para grupos de cosas (<em>team</em>, <em>family</em>, <em>herd</em>, <em>choir</em>, <em>flock</em>) llevan un pronombre singular (<em>it</em>).</p><p>Cuando los miembros de un grupo actúan como individuos, el pronombre es plural (<em>they</em>).</p></td>
+      <td><p>Con los nombres que se refieren a grupos de cosas (<em>team</em>,<em> family</em>,<em> herd</em>,<em> choir</em>,<em> flock</em>) se utiliza el pronombre singular (<em>it</em>).</p><p>Cuando los miembros de un grupo realizan acciones como individuos, se utiliza el pronombre plural (<em>they</em>).</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>When the same action happens to three or more different things, combine them into a list.</p></td>
+      <td><p>Cuando la misma acción sucede a tres o más cosas diferentes, combínalas en una lista.</p></td>
+      <td><p>Cuando la misma acción suceda con tres o más cosas diferentes, agrúpalas en una lista.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Use <em>a</em> or <em>an</em> before general things or things that have not been seen or talked about before. </p><br><p>Use <em>the</em> before specific things or things that have already been mentioned.</p></td>
+      <td><p>Usa <em>a</em> o <em>an</em> antes de cosas generales o cosas que no se han visto ni mencionado antes.</p><br><p>Usa <em>the</em> antes de cosas específicas o cosas que ya se han mencionado.</p></td>
+      <td><p>Utiliza <em>a</em> o <em>an</em> antes de cosas generales o que no se han visto o no han sido mencionadas antes. </p><br><p>Utiliza <em>the</em> antes de cosas específicas o que ya se han mencionado.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>When there is more than one <em>child</em>, use <em>children.</em></p></td>
+      <td><p>Cuando hay más de un <em>child</em>, usa <em>children.</em></p></td>
+      <td><p>Cuando haya más de un <em>child</em>, utiliza <em>children.</em></p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Words like <em>both</em>, <em>few</em>, <em>certain</em>, <em>many</em>, or <em>several </em>are plural. They show there is more than one of something. </p><br><p>When you see these words, make sure any pronouns (like <em>we </em>or<em> they)</em> that refer to them are also plural.</p></td>
+      <td><p>Palabras como <em>both</em>, <em>few</em>, <em>certain</em>, <em>many</em> o <em>several</em> son plurales. Indican que hay más de uno de algo.</p><br><p>Cuando veas estas palabras, asegúrate de que cualquier pronombre (como <em>we</em> o <em>they</em>) que se refiera a ellas también sea plural.</p></td>
+      <td><p>Palabras como <em>both</em>, <em>few</em>, <em>certain</em>, <em>many</em> o <em>several </em>son plurales. Indican que hay más de un elemento de algo. </p><br><p>Cuando veas estas palabras, asegúrate de que los pronombres (como <em>we </em>o<em> they)</em> que hagan referencia a ellas estén también en plural.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>A word that describes a thing or person can be changed to describe an action instead. Add <em>-ly</em> to the word. Then put it before the action.</p></td>
+      <td><p>Una palabra que describe una cosa o persona puede cambiarse para describir una acción en su lugar. Agrega <em>-ly</em> a la palabra. Luego colócala antes de la acción.</p></td>
+      <td><p>Una palabra que describe una cosa o una persona puede modificarse para que describa una acción. Agrega <em>-ly</em> a la palabra. Luego colócala antes de la acción.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Add describing words right before the things or people they describe. </p><br><p>Add words that describe actions before or after the action word.</p></td>
+      <td><p>Agrega palabras descriptivas justo antes de las cosas o personas que describen.</p><br><p>Agrega palabras que describen acciones antes o después del verbo.</p></td>
+      <td><p>Agrega palabras descriptivas justo antes de las cosas o personas que describen. </p><br><p>Agrega palabras que describan acciones antes o después de la palabra de acción.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>When you start a sentence with a thing or person, always put <em>the</em> before the thing or person.</p></td>
+      <td><p>Cuando comiences una oración con una cosa o persona, siempre coloca <em>the</em> antes de la cosa o persona.</p></td>
+      <td><p>Cuando comiences una oración con una cosa o persona, siempre coloca <em>the</em> antes de dicha cosa o persona.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>A complete sentence must have a person, animal, or thing doing an action.</p></td>
+      <td><p>Una oración completa debe tener una persona, animal o cosa realizando una acción.</p></td>
+      <td><p>En una oración completa debe haber una persona, animal o cosa realizando una acción.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>If a sentence begins with a joining word (like <em>when</em>) and leaves you wondering more, add two words: a person, animal, or thing and an action word.&nbsp;</p></td>
+      <td><p>Si una oración comienza con una palabra de unión (como <em>when</em>) y te deja con más preguntas, agrega dos palabras: una persona, animal o cosa y una palabra de acción.&nbsp;</p></td>
+      <td><p>Si una oración comienza con una palabra de enlace (como <em>when</em>) y te preguntas qué sigue, agrega dos palabras, una persona, animal o cosa y una palabra de acción.&nbsp;</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Use <em>a</em> or <em>an</em> before things and types of people.</p><br><p>Do not use <em>a</em> or <em>an</em> before describing words.</p></td>
+      <td><p>Usa <em>a</em> o <em>an</em> antes de cosas y tipos de personas.</p><br><p>No uses <em>a</em> o <em>an</em> antes de palabras que describen.</p></td>
+      <td><p>Utiliza <em>a</em> o <em>an</em> antes de cosas y tipos de personas.</p><br><p>No utilices <em>a</em> ni <em>an</em> antes de palabras descriptivas.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>To Sit</p></td>
+      <td><p>To Sit</p></td>
+      <td><p>To Sit</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Use <em>an</em> when the word starts with a vowel (<em>a</em>, <em>e</em>,<em> i</em>, <em>o</em>, <em>u</em>).</p><br><p>Use <em>a</em> when the word starts with any other letter.</p></td>
+      <td><p>Usa <em>an</em> cuando la palabra comience con una vocal (<em>a</em>, <em>e</em>,<em> i</em>, <em>o</em>, <em>u</em>).</p><br><p>Usa <em>a</em> cuando la palabra comience con cualquier otra letra.</p></td>
+      <td><p>Utiliza <em>an</em> cuando la palabra comience con vocal (<em>a</em>, <em>e</em>,<em> i</em>, <em>o</em> y <em>u</em>).</p><br><p>Utiliza <em>a</em> cuando la palabra comience con cualquier otra letra.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>To Eat</p></td>
+      <td><p>To Eat</p></td>
+      <td><p>To Eat</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><br></td>
+      <td><br></td>
+      <td><br></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p><strong>Which</strong> gives extra information that could be taken out without changing the main idea.</p><br><p><strong>That</strong> gives essential information that has to be in the sentence for the main idea to be clear or complete.</p><br><p><strong>Who</strong> gives information about people. It can be extra or essential.</p></td>
+      <td><p><strong>Which</strong> aporta información adicional que podría eliminarse sin alterar la idea principal.</p><br><p><strong>That</strong> proporciona información esencial que debe estar en la frase para que la idea principal sea clara o completa.</p><br><p><strong>Who</strong> aporta información sobre personas. Puede ser adicional o esencial.</p></td>
+      <td><p><strong>Which</strong> introduce información adicional que podría eliminarse sin cambiar la idea principal.</p><br><p><strong>That</strong> introduce información esencial que debe estar en la oración para que la idea principal sea clara o completa.</p><br><p><strong>Who</strong> introduce información sobre las personas. Esta puede ser adicional o esencial.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>To wish for something, wonder if something could happen, or suggest something, use&nbsp;<em>were</em>.</p><br><p>To show that something happened in the past, use&nbsp;<em>was</em>.</p></td>
+      <td><p>Para desear algo, preguntarse si algo podría suceder o sugerir algo, usa <em>were</em>.</p><br><p>Para mostrar que algo sucedió en el pasado, usa <em>was</em>.</p></td>
+      <td><p>Para expresar deseo por algo, duda de si algo podría suceder o sugerir algo, utiliza&nbsp;<em>were</em>.</p><br><p>Para indicar que algo sucedió en el pasado, utiliza&nbsp;<em>was</em>.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p><em>On</em>&nbsp;is used when there is a surface under an object or person. <em>On</em> is also used with phones, computers, and to talk about the left or right side of things.</p></td>
+      <td><p><em>On</em> se utiliza cuando hay una superficie bajo un objeto o persona. <em>On</em> también se usa con teléfonos, computadoras y para hablar del lado izquierdo o derecho de las cosas.</p></td>
+      <td><p><em>On</em>&nbsp;se utiliza cuando hay una superficie debajo de un objeto o persona. <em>On</em> también se utiliza con teléfonos, computadoras y para referirse al lado izquierdo o derecho de las cosas.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>When one person or thing does more than one action, combine the actions into a list.</p></td>
+      <td><p>Cuando una persona o cosa realiza más de una acción, combina las acciones en una lista.</p></td>
+      <td><p>Cuando una persona o cosa realice más de una acción, combina las acciones en una lista.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p><em>Your</em> is used to show ownership. Use <em>your</em> when something belongs to somebody.</p></td>
+      <td><p><em>Your</em> se utiliza para mostrar propiedad. Usa <em>your</em> cuando algo pertenece a alguien.</p></td>
+      <td><p><em>Your</em> se utiliza para indicar propiedad. Utiliza <em>your</em> cuando algo le pertenezca a alguien.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Put extra detail about who someone is or what something is at the end of the sentence. Make sure it comes right after the person or thing it describes.</p><br><p>Put a comma before the extra information.</p></td>
+      <td><p>Coloca detalles adicionales sobre quién es alguien o qué es algo al final de la frase. Asegúrate de que vaya justo después de la persona o cosa que describe.</p><br><p>Pon una coma antes de la información adicional.<!-- p--></p></td>
+      <td><p>Incluye detalles adicionales al final de la oración sobre quién es alguien o qué es algo. Asegúrate de que esté justo después de la persona o cosa que describa.</p><br><p>Coloca una coma antes de la información adicional.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Describe how an action is done by adding an <em>-ly</em> word before the action or at the end of the sentence. </p></td>
+      <td><p>Describe cómo se realiza una acción añadiendo una palabra con <em>-ly</em> antes de la acción o al final de la frase.</p></td>
+      <td><p>Describe cómo se realiza una acción agregando una palabra que termine con <em>-ly</em> antes de la acción o al final de la oración. </p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Words or phrases in a list should all be in the same form. Avoid mixing words that end in <em>-ing </em>with words that don't. Make them match!</p></td>
+      <td><p>Las palabras o frases en una lista deben estar todas en la misma forma. Evita mezclar palabras que terminan en <em>-ing</em> con palabras que no terminan así. ¡Haz que coincidan!</p></td>
+      <td><p>Todas las palabras o frases de una lista deben tener la misma forma. Evita mezclar palabras que terminen en <em>-ing </em> con otras que no. ¡Haz que coincidan!</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>To Help</p></td>
+      <td><p>Para ayudar</p></td>
+      <td><p>To Help</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>In a sentence, there's a person or thing and an action word right after it.</p><br><p>When a sentence is in active voice, the person or thing is the one doing the action that follows it.</p><br><p>When a sentence is in passive voice, the person or thing right before the action word isn't the one doing the action—the action is happening to the person or thing.</p></td>
+      <td><p>En una oración, hay una persona o cosa y un verbo justo después de ello.</p><br><p>Cuando una oración está en voz activa, la persona o cosa es la que realiza la acción que le sigue.</p><br><p>Cuando una oración está en voz pasiva, la persona o cosa justo antes del verbo no es quien realiza la acción; la acción le ocurre a la persona o cosa.</p></td>
+      <td><p>En una oración, hay una persona o cosa y una palabra de acción inmediatamente después.</p><br><p>Cuando una oración está en voz activa, la persona o cosa es la que realiza la acción que le sigue.</p><br><p>Cuando una oración está en voz pasiva, la persona o cosa justo antes de la palabra de acción no es la que realiza la acción: la acción le sucede a la persona o cosa.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>To Eat</p></td>
+      <td><p>To Eat</p></td>
+      <td><p>To Eat</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Use to + an action word (<em>to go</em>, <em>to eat</em>, <em>to love</em>) before a group of words to tell more about something. </p><br><p>In this example, <em>to go on a trip</em> tells more about why I saved up money. </p></td>
+      <td><p>Usa to + un verbo (<em>to go</em>, <em>to eat</em>, <em>to love</em>) antes de un grupo de palabras para proporcionar más detalles sobre algo.</p><br><p>En este ejemplo, <em>to go on a trip</em> explica más sobre por qué ahorré dinero.</p></td>
+      <td><p>Utiliza "to" más una palabra de acción (<em>to go</em>, <em>to eat</em> o <em>to love</em>) antes de un grupo de palabras para decir más sobre algo. </p><br><p>En este ejemplo, <em>to go on a trip</em> explica por qué ahorré dinero. </p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>When two people, animals, or things are doing the same action, use an action word that matches <em>they</em>.</p></td>
+      <td><p>Cuando dos personas, animales o cosas están realizando la misma acción, usa una palabra de acción que coincida con <em>they</em>.</p></td>
+      <td><p>Cuando dos personas, animales o cosas realicen la misma acción, utiliza una palabra de acción que coincida con <em>they</em>.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Adjectives give different types of information. They go in a certain order.</p>
+<p><br></p>
+<p>Opinion | Size | Age | Color | Country | Material</p></td>
+      <td><p>Los adjetivos proporcionan diferentes tipos de información. Siguen un orden específico.</p>
+<p><br></p>
+<p>Opinión | Tamaño | Edad | Color | País | Material</p></td>
+      <td><p>Los adjetivos proporcionan diferentes tipos de información. Llevan cierto orden.</p>
+<p><br></p>
+<p>Opinión | Tamaño | Edad | Color | País | Materiales</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>When there is more than one <em>man</em>, use <em>men.</em></p></td>
+      <td><p>Cuando hay más de un <em>man</em>, usa <em>men</em>.</p></td>
+      <td><p>Cuando haya más de un <em>man</em>, utiliza <em>men.</em></p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Put a describing phrase in the middle, right after the word it describes. Put a comma before and after the phrase.</p></td>
+      <td><p>Coloca una frase descriptiva en el medio, justo después de la palabra que describe. Pon una coma antes y después de la frase.</p></td>
+      <td><p>Coloque una frase descriptiva en el medio, justo después de la palabra que describa. Coloca una coma antes y después de la frase.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Sometimes adjectives go before the noun and give different types of information.&nbsp;</p>
+<p>They do not need a comma between them. They do not need "and."</p></td>
+      <td><p>A veces los adjetivos van antes del sustantivo y brindan diferentes tipos de información.&nbsp;</p>
+<p>No necesitan una coma entre ellos. No necesitan "y".</p></td>
+      <td><p>A veces los adjetivos van antes del sustantivo y proporcionan diferentes tipos de información.</p>
+<p>No es necesario que haya comas entre ellos. Con ellos no es necesario escribir "and".</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Everything that happens in the&nbsp;<em>present</em>&nbsp;must be written in the&nbsp;<em>present</em>&nbsp;tense.</p><p>Everything that happens in the&nbsp;<em>past</em>&nbsp;must be written in the&nbsp;<em>past</em>&nbsp;tense.</p><p>Everything that happens in the&nbsp;<em>future</em>&nbsp;must be written in the&nbsp;<em>future</em>&nbsp;tense.</p></td>
+      <td><p>Todo lo que sucede en el <em>present</em> debe escribirse en tiempo <em>present</em>.</p><p>Todo lo que sucede en el <em>past</em> debe escribirse en tiempo <em>past</em>.</p><p>Todo lo que sucede en el <em>future</em> debe escribirse en tiempo <em>future</em>.</p></td>
+      <td><p>Todo lo que suceda en el&nbsp;<em>presente</em>&nbsp;debe escribirse en el tiempo&nbsp;<em>presente</em>.</p><p>Todo lo que suceda en el&nbsp;<em>pasado</em>&nbsp;debe escribirse en el tiempo&nbsp;<em>pasado</em>.</p><p>Todo lo que suceda en el&nbsp;<em>futuro</em>&nbsp;debe escribirse el tiempo&nbsp;<em>futuro</em>.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Use <em>the</em> before oceans, mountain ranges, sports teams, and monuments.</p><br><p>Do not use <em>the</em> before cities, states, countries, or the name of a single mountain or lake.</p></td>
+      <td><p>Usa <em>the</em> antes de los océanos, cordilleras, equipos deportivos y monumentos.</p><br><p>No uses <em>the</em> antes de ciudades, estados, países, o el nombre de una sola montaña o lago.</p></td>
+      <td><p>Utiliza <em>the</em> antes de océanos, cadenas montañosas, equipos deportivos y monumentos.</p><br><p>No utilices <em>the</em> antes de ciudades, estados, países o el nombre de una sola montaña o lago.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Put a describing phrase that begins with an <em>-ed</em> word or an -<em>ing </em>word at the end of the sentence to describe what the person is doing or to describe the whole idea in the sentence. Use a comma!</p></td>
+      <td><p>Coloca una frase descriptiva que comience con una palabra en <em>-ed</em> o en -<em>ing</em> al final de la oración para describir lo que la persona está haciendo o para describir la idea completa de la oración. ¡Usa una coma!</p></td>
+      <td><p>Coloca una frase descriptiva que comience con una palabra terminada en <em>-ed</em> o -<em>ing </em>al final de la oración para describir lo que la persona está haciendo o la idea completa de la oración. ¡Utiliza una coma!</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Add an <em>s</em> to a word to make it plural. This shows there is more than one.</p><br><p>Add an apostrophe and an <em>s</em> to make it possessive. This shows ownership.</p></td>
+      <td><p>Agrega una <em>s</em> a una palabra para hacerla plural. Esto indica que hay más de uno.</p><br><p>Agrega un apóstrofo y una <em>s</em> para hacerla posesiva. Esto muestra propiedad.</p></td>
+      <td><p>Agrega <em>s</em> a una palabra para hacerla plural. Esto indica que hay más de un elemento.</p><br><p>Agrega un apóstrofo y una <em>s</em> para hacerla posesiva. Esto indica posesión.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>When you're talking about more than one person or thing, add an <em>s</em> to the end of the person or thing to make it plural.</p></td>
+      <td><p>Cuando hables de más de una persona o cosa, agrega una <em>s al final de la persona o cosa para hacerlo plural.</em></p></td>
+      <td><p>Cuando hagas referencia a más de una persona o cosa, añade una <em>s</em> al final de la persona o cosa para que queden en plural.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>To Put</p></td>
+      <td><p>To Put</p></td>
+      <td><p>To Put</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>To Study</p></td>
+      <td><p>Para estudiar</p></td>
+      <td><p>To Study</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>To Talk</p></td>
+      <td><p>Para hablar</p></td>
+      <td><p>To Talk</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p><em>Can't</em>&nbsp;is the combination of&nbsp;<em>can</em>&nbsp;and&nbsp;<em>not.</em></p></td>
+      <td><p><em>Can't</em> es la combinación de <em>can</em> y <em>not.</em></p></td>
+      <td><p><em>Can't</em>&nbsp;es la combinación de&nbsp;<em>can</em>&nbsp;y&nbsp;<em>not.</em></p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Put a describing phrase at the end of the sentence to describe what Jenny is doing. Use a comma!</p></td>
+      <td><p>Coloca una frase descriptiva al final de la oración para describir lo que Jenny está haciendo. ¡Usa una coma!</p></td>
+      <td><p>Agrega una frase descriptiva al final de la oración para describir lo que Jenny está haciendo. ¡Utiliza una coma!</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Combine sentences using <em>not only</em> and <em>but also</em> to show that two things are true.</p></td>
+      <td><p>Combina las oraciones usando <em>not only</em> y <em>but also</em> para mostrar que ambas cosas son ciertas.</p></td>
+      <td><p>Combina oraciones utilizando <em>not only</em> y <em>but also</em> para indicar que las dos cosas son ciertas.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p><em>Couldn’t</em>&nbsp;is the combination of&nbsp;<em>could</em>&nbsp;and&nbsp;<em>not.</em></p></td>
+      <td><p><em>Couldn’t</em> es la combinación de <em>could</em> y <em>not.</em></p></td>
+      <td><p><em>Couldn’t</em>&nbsp;es la combinación de&nbsp;<em>could</em>&nbsp;y&nbsp;<em>not.</em></p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>Use&nbsp;<em>from</em>&nbsp;when a person gave or sent something.</p><p>People can also be&nbsp;<em>from</em>&nbsp;a place.</p></td>
+      <td><p>Usa <em>from</em> cuando una persona dio o envió algo.</p><p>Las personas también pueden ser <em>from</em> un lugar.</p></td>
+      <td><p>Utiliza&nbsp;<em>from</em>&nbsp;cuando una persona dé o envíe algo.</p><p>Las personas también pueden ser&nbsp;<em>from</em>&nbsp;un lugar.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>When a sentence begins with&nbsp;<em>there</em>, you usually need a word like&nbsp;<em>is, am, are, was&nbsp;</em>or&nbsp;<em>were</em>&nbsp;right after it.&nbsp;</p></td>
+      <td><p>Cuando una oración comienza con&nbsp;<em>there</em>, generalmente necesitas una palabra como&nbsp;<em>is, am, are, was</em>&nbsp;o&nbsp;<em>were</em>&nbsp;justo después.&nbsp;</p></td>
+      <td><p>Cuando una oración comienza con&nbsp;<em>there</em>, normalmente necesitas una palabra como&nbsp;<em>is, am, are, was&nbsp;</em>o &nbsp;<em>were</em>&nbsp;inmediatamente después.&nbsp;</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td><p>When you connect two sentences by putting a joining word between them, you don’t need any commas.</p></td>
+      <td><p>Cuando conectas dos oraciones colocando una palabra de unión entre ellas, no necesitas ninguna coma.</p></td>
+      <td><p>Cuando juntas dos oraciones poniendo una palabra de enlace entre ellas, no necesitas comas.</p></td>
+      <td>hint description</td>
+  </tr>
+  <tr>
+      <td>Fill in the blank with the correct word.</td>
+      <td>Complete el espacio en blanco con la palabra correcta.</td>
+      <td>Rellena el espacio en blanco con la palabra correcta.</td>
+      <td>question</td>
+  </tr>
+  <tr>
+      <td><h3><strong>A / An</strong></h3><p>Put <strong>a</strong> or <strong>an</strong> before a person or thing.</p><br><p><u>You See</u></p><p>Is she <strong>teacher / a teacher</strong>?</p><br><p><u>You Write</u></p><p>Is she <strong>a teacher</strong>?</p></td>
+      <td><h3><strong>A / An</strong></h3><p>Coloca <strong>a</strong> o <strong>an</strong> antes de una persona o cosa.</p><br><p><u>Ves</u></p><p>¿Es ella <strong>teacher / a teacher</strong>?</p><br><p><u>Escribes</u></p><p>¿Es ella <strong>a teacher</strong>?</p></td>
+      <td><strong>A / An</strong><p>Coloca <strong>a</strong> o <strong>an</strong> antes de una persona o cosa.</p><br><p><u>Esto ves</u></p><p>Is she <strong>teacher / a teacher</strong>?</p><br><p><u>Esto escribes</u></p><p>Is she <strong>a teacher</strong>?</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>For, With, To</strong></h3><p>Use these words in different situations:</p><br><p>Things are <em>for</em> people.</p><p>People are <em>with</em> people.</p><p>People go <em>to</em> places.</p><br><p><u>Examples</u></p><p>It is <em>for</em> my mother.</p><p>I am <em>with</em> my friend.</p><p>I go <em>to</em> the park.</p><br><p><strong><u>You See</u></strong></p><p>She drives ___ work.</p><br><p><strong><u>You Write</u></strong></p><p>She drives <strong>to</strong> work.</p></td>
+      <td><h3><strong>For, With, To</strong></h3><p>Usa estas palabras en diferentes situaciones:</p><br><p>Las cosas son <em>for</em> las personas.</p><p>Las personas están <em>with</em> otras personas.</p><p>Las personas van <em>to</em> lugares.</p><br><p><u>Ejemplos</u></p><p>Es <em>for</em> mi madre.</p><p>Estoy <em>with</em> mi amigo.</p><p>Voy <em>to</em> el parque.</p><br><p><strong><u>You See</u></strong></p><p>Ella conduce ___ trabajo.</p><br><p><strong><u>You Write</u></strong></p><p>Ella conduce <strong>to</strong> trabajo.</p></td>
+      <td><strong>For, With, To</strong><p>Utiliza estas palabras en diferentes situaciones:</p><br><p>Things are <em>for</em> people.</p><p>People are <em>with</em> people.</p><p>People go <em>to</em> places.</p><br><p><u>Ejemplos:</u></p><p>It is <em>for</em> my mother.</p><p>I am <em>with</em> my friend.</p><p>I go <em>to</em> the park.</p><br><p><strong><u>Esto ves</u></strong></p><p>She drives ___ work.</p><br><p><strong><u>Esto escribes</u></strong></p><p>She drives <strong>to</strong> work.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>A / An</strong></h3><p>Use <em>an</em> when the next word starts with <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em>, or <em>u</em>.</p><p>Use <em>a</em> when the next word starts with any other letter.</p><br><p><u>You See</u></p><p>I am ___ adult.</p><br><p><u>You Write</u></p><p>I am <strong>an</strong> adult.</p><br><br><p><u>You See</u></p><p>I am ___ student.</p><br><p><u>You Write</u></p><p>I am <strong>a</strong> student.</p></td>
+      <td><h3><strong>A / An</strong></h3><p>Usa <em>an</em> cuando la siguiente palabra comienza con <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em> o <em>u</em>.</p><p>Usa <em>a</em> cuando la siguiente palabra comienza con cualquier otra letra.</p><br><p><u>Ves</u></p><p>Soy ___ adulto.</p><br><p><u>Escribes</u></p><p>Soy <strong>an</strong> adulto.</p><br><br><p><u>Ves</u></p><p>Soy ___ estudiante.</p><br><p><u>Escribes</u></p><p>Soy <strong>a</strong> estudiante.</p></td>
+      <td><strong>A / An</strong><p>Utiliza <em>an</em> cuando la siguiente palabra comience con <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em> o <em>u</em>.</p><p>Utiliza <em>a</em> cuando la siguiente palabra comience con cualquier otra letra.</p><br><p><u>Esto ves</u></p><p>I am ___ adult.</p><br><p><u>Esto escribes</u></p><p>I am <strong>an</strong> adult.</p><br><br><p><u>Esto ves</u></p><p>I am ___ student.</p><br><p><u>Esto escribes</u></p><p>I am <strong>a</strong> student.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>A / An</strong></h3><p>Use <em>an</em> when the next word starts with <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em>, or <em>u</em>.<br>Use <em>a</em> when the next word starts with any other letter.</p><br><p><u>You See</u><br>I do not have ___ apple.</p><br><p><u>You Write</u><br>I do not have <strong>an</strong> apple.</p><br><br><p><u>You See</u><br>She does not have ___ pencil.</p><br><p><u>You Write</u><br>She does not have <strong>a</strong> pencil.</p></td>
+      <td><h3><strong>A / An</strong></h3><p>Usa <em>an</em> cuando la siguiente palabra comienza con <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em> o <em>u</em>.<br>Usa <em>a</em> cuando la siguiente palabra comienza con cualquier otra letra.</p><br><p><u>Ves</u><br>No tengo ___ manzana.</p><br><p><u>Escribe</u><br>No tengo <strong>an</strong> manzana.</p><br><br><p><u>Ves</u><br>Ella no tiene ___ lápiz.</p><br><p><u>Escribe</u><br>Ella no tiene <strong>a</strong> lápiz.</p></td>
+      <td><strong>A / An</strong><p>Utiliza <em>an</em> cuando la siguiente palabra comience con <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em> o <em>u</em>.<br>Utiliza <em>a</em> cuando la siguiente palabra comience con cualquier otra letra.</p><br><p><u>Esto ves</u><br>I do not have ___ apple.</p><br><p><u>Esto escribes</u><br>I do not have <strong>an</strong> apple.</p><br><br><p><u>Esto ves</u><br>She does not have ___ pencil.</p><br><p><u>Esto escribes</u><br>She does not have <strong>a</strong> pencil.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>A / An</strong></h3><p>Use <em>an</em> when the next word starts with <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em>, or <em>u</em>. </p><p>Use <em>a</em> when the next word starts with any other letter. </p><p><br><u>You See</u></p><p>I am ___ adult.</p><p><br><u>You Write</u></p><p>I am <strong>an</strong> adult.</p><br><br><p><u>You See</u></p><p>I am ___ student.</p><p><br><u>You Write</u></p><p>I am <strong>a</strong> student.</p></td>
+      <td><h3><strong>A / An</strong></h3><p>Usa <em>an</em> cuando la siguiente palabra comience con <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em>, o <em>u</em>. </p><p>Usa <em>a</em> cuando la siguiente palabra comience con cualquier otra letra. </p><p><br><u>Ves</u></p><p>Soy ___ adulto.</p><p><br><u>Escribes</u></p><p>Soy <strong>an</strong> adulto.</p><br><br><p><u>Ves</u></p><p>Soy ___ estudiante.</p><p><br><u>Escribes</u></p><p>Soy <strong>a</strong> estudiante.</p></td>
+      <td><strong>A / An</strong><p>Utiliza <em>an</em> cuando la siguiente palabra comience con <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em> o <em>u</em>. </p><p>Utiliza <em>a</em> cuando la siguiente palabra comience con cualquier otra letra. </p><p><br><u>Esto ves</u></p><p>I am ___ adult.</p><p><br><u>Esto escribes</u></p><p>I am <strong>an</strong> adult.</p><br><br><p><u>Esto ves</u></p><p>I am ___ student.</p><p><br><u>Esto escribes</u></p><p>I am <strong>a</strong> student.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Using <em>a, an</em>, and <em>the</em></strong></h3><p>Use <em>a</em> or <em>an</em> before general things or things that have not been seen or talked about before. </p><br><p>Use <em>the</em> before specific things or things that have already been mentioned. </p><br><p><strong><u>You See</u></strong></p><p>I visited ___ Grand Canyon this summer. </p><br><p><strong><u>You Write</u></strong></p><p>I visited <strong>the </strong>Grand Canyon this summer.</p></td>
+      <td><h3><strong>Uso de <em>a, an</em> y <em>the</em></strong></h3><p>Usa <em>a</em> o <em>an</em> antes de cosas generales o cosas que no han sido vistas o mencionadas antes.</p><br><p>Usa <em>the</em> antes de cosas específicas o cosas que ya han sido mencionadas.</p><br><p><strong><u>Ves</u></strong></p><p>Visité ___ Grand Canyon este verano.</p><br><p><strong><u>Escribes</u></strong></p><p>Visité <strong>the</strong> Grand Canyon este verano.</p></td>
+      <td><strong>Utilizar <em>a, an</em> y <em>the</em></strong><p>Utiliza <em>a</em> o <em>an</em> antes de cosas generales o que no se han visto o no han sido mencionadas antes. </p><br><p>Utiliza <em>the</em> antes de cosas específicas o que ya se han mencionado. </p><br><p><strong><u>Esto ves</u></strong></p><p>I visited ___ Grand Canyon this summer. </p><br><p><strong><u>Esto escribes</u></strong></p><p>I visited <strong>the </strong>Grand Canyon this summer.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>A / An</strong></h3><p>Use <em>an</em> when the next word starts with <em>a</em>, <em>e</em>, <em>i,</em> <em>o</em>, or <em>u</em>.<br>Use <em>a</em> when the next word starts with any other letter.</p><br><p><u>You See</u><br>I do not want ___ apple.</p><br><p><u>You Write</u><br>I do not want <strong>an</strong> apple.</p><br><br><p><u>You See</u><br>She does not want ___ pencil.</p><br><p><u>You Write</u><br>She does not want <strong>a</strong> pencil.</p></td>
+      <td><h3><strong>A / An</strong></h3><p>Usa <em>an</em> cuando la siguiente palabra comience con <em>a</em>, <em>e</em>, <em>i,</em> <em>o</em>, o <em>u</em>.<br>Usa <em>a</em> cuando la siguiente palabra comience con cualquier otra letra.</p><br><p><u>Usted Ve</u><br>No quiero ___ manzana.</p><br><p><u>Usted Escribe</u><br>No quiero <strong>an manzana.</strong></p><strong><br><br><p><u>Usted Ve</u><br>Ella no quiere ___ lápiz.</p><br><p><u>Usted Escribe</u><br>Ella no quiere <strong>a</strong> lápiz.</p></strong></td>
+      <td><strong>A / An</strong><p>Utiliza <em>an</em> cuando la siguiente palabra comience con <em>a</em>, <em>e</em>, <em>i,</em> <em>o</em> o <em>u</em>.<br>Utiliza <em>a</em> cuando la siguiente palabra comience con cualquier otra letra.</p><br><p><u>Esto ves</u><br>I do not want ___ apple.</p><br><p><u>Esto escribes</u><br>I do not want <strong>an</strong> apple.</p><br><br><p><u>Esto ves</u><br>She does not want ___ pencil.</p><br><p><u>Esto escribes</u><br>She does not want <strong>a</strong> pencil.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>A / An</strong></h3><p>Use <em>an</em> when the next word starts with <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em>, or <em>u</em>.</p><br><p><u>You See</u></p><p>I am <strong>a / an</strong> adult.</p><br><p><u>You Write</u></p><p>I am <strong>an</strong> adult.<br></p><p>Use <em>a</em> when the next word starts with any other letter. </p><p><br><u>You See</u></p><p>I am <strong>a / an</strong> student.</p><br><p><u>You Write</u></p><p>I am <strong>a</strong> student.</p></td>
+      <td><h3><strong>A / An</strong></h3><p>Usa <em>an</em> cuando la siguiente palabra comience con <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em> o <em>u</em>.</p><br><p><u>Ves</u></p><p>Soy <strong>a / an</strong> adulto.</p><br><p><u>Escribes</u></p><p>Soy <strong>an</strong> adulto.<br></p><p>Usa <em>a</em> cuando la siguiente palabra comience con cualquier otra letra.</p><p><br><u>Ves</u></p><p>Soy <strong>a / an</strong> estudiante.</p><br><p><u>Escribes</u></p><p>Soy <strong>a</strong> estudiante.</p></td>
+      <td><strong>A / An</strong><p>Utiliza <em>an</em> cuando la siguiente palabra comience con <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em> o <em>u</em>.</p><br><p><u>Esto ves</u></p><p>I am <strong>a / an</strong> adult.</p><br><p><u>Esto escribes</u></p><p>I am <strong>an</strong> adult.<br></p><p>Utiliza <em>a</em> cuando la siguiente palabra comience con cualquier otra letra. </p><p><br><u>Esto ves</u></p><p>I am <strong>a / an</strong> student.</p><br><p><u>Esto escribes</u></p><p>I am <strong>a</strong> student.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Using <em>a, an</em>, and <em>the</em></strong></h3><p>Use <em>an</em> when a thing starts with a, e, i, o, or u.</p><p>Use <em>a</em> when a thing starts with any other letter.</p><p>Do not put <em>a</em>, <em>an</em>, or <em>the</em> before a single describing word.</p><br><p><u>Examples</u></p><p>It is <strong>an apple</strong>.</p><p>You are <strong>a good friend</strong>.</p><p>He is <strong>happy</strong>.</p></td>
+      <td><h3><strong>Uso de <em>a, an</em> y <em>the</em></strong></h3><p>Utiliza <em>an</em> cuando una cosa comienza con a, e, i, o, u.</p><p>Utiliza <em>a</em> cuando una cosa comienza con cualquier otra letra.</p><p>No coloques <em>a</em>, <em>an</em> o <em>the</em> antes de un solo adjetivo.</p><br><p><u>Ejemplos</u></p><p>Es <strong>an apple</strong>.</p><p>Eres <strong>a good friend</strong>.</p><p>Él es <strong>happy</strong>.</p></td>
+      <td><strong>Utilizar <em>a, an</em> y <em>the</em></strong><p>Utiliza <em>an</em> cuando algo comience con a, e, i, o o u.</p><p>Utiliza <em>a</em> cuando algo comience con cualquier otra letra.</p><p>No pongas <em>a</em>, <em>an</em> o <em>the</em> antes de una sola palabra descriptiva.</p><br><p><u>Ejemplos:</u></p><p>It is <strong>an apple</strong>.</p><p>You are <strong>a good friend</strong>.</p><p>He is <strong>happy</strong>.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>A, An with Describing Words</strong></h3><p>Do not put <em>a</em>, <em>an</em>, or <em>the</em> before a single describing word.</p><br><p><u>You See</u></p><p>He is <strong>happy / a happy</strong>.</p><br><p><u>You Write</u></p><p>He is <strong>happy</strong>.</p></td>
+      <td><h3><strong>A, An con palabras descriptivas</strong></h3><p>No coloques <em>a</em>, <em>an</em> o <em>the</em> antes de una palabra descriptiva singular.</p><br><p><u>Ves</u></p><p>Él es <strong>happy / a happy</strong>.</p><br><p><u>Escribes</u></p><p>Él es <strong>happy</strong>.</p></td>
+      <td><strong>A, An con palabras descriptivas</strong><p>No pongas <em>a</em>, <em>an</em> o <em>the</em> antes de una sola palabra descriptiva.</p><br><p><u>Esto ves</u></p><p>He is <strong>happy / a happy</strong>.</p><br><p><u>Esto escribes</u></p><p>He is <strong>happy</strong>.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Come, Eat, and Drink</strong></h3><p>The past tense of <em>come</em> is <em>came</em>.</p><p>I <strong>come</strong> home yesterday. -&gt; I <strong>came</strong> home yesterday. </p><br><p>The past tense of <em>eat</em> is <em>ate.</em></p><p>She <strong>eats</strong> cereal earlier. -&gt; She <strong>ate</strong> cereal earlier.</p><br><p>The past tense of <em>drink</em> is <em>drank</em>.</p><p>He <strong>drinks</strong> coffee this morning. -&gt; He <strong>drank</strong> coffee this morning.</p></td>
+      <td><h3><strong>Ven, Come y Bebe</strong></h3><p>El tiempo pasado de <em>come</em> es <em>came</em>.</p><p>Yo <strong>come</strong> a casa ayer. -&gt; Yo <strong>came</strong> a casa ayer.</p><br><p>El tiempo pasado de <em>eat</em> es <em>ate</em>.</p><p>Ella <strong>eats</strong> cereal antes. -&gt; Ella <strong>ate cereal antes.</strong></p><strong><br><p>El tiempo pasado de <em>drink</em> es <em>drank</em>.</p><p>Él <strong>drinks</strong> café esta mañana. -&gt; Él <strong>drank</strong> café esta mañana.</p></strong></td>
+      <td><strong>Come, Eat, and Drink</strong><p>El pasado de <em>come</em> es <em>came</em>.</p><p>I <strong>come</strong> home yesterday. -&gt; I <strong>came</strong> home yesterday. </p><br><p>El pasado de <em>eat</em> es <em>ate.</em></p><p>She <strong>eats</strong> cereal earlier. -&gt; She <strong>ate</strong> cereal earlier.</p><br><p>El pasado de <em>drink</em> es <em>drank</em>.</p><p>He <strong>drinks</strong> coffee this morning. -&gt; He <strong>drank</strong> coffee this morning.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>A, An with Things and Describing Words</strong></h3><p>Use <em>an</em> when a thing starts with a, e, i, o, or u.<br>Use <em>a</em> when a thing starts with any other letter.</p><br><p>Do not put <em>a</em>, <em>an</em>, or <em>the</em> before a single describing word.</p><br><p><u>You See</u><br>It is <strong>a / an</strong> apple.</p><br><p><u>You Write</u><br>It is <strong>an</strong> apple.</p><p><br><u>You See</u></p><p>He is <strong>happy / a happy</strong>.</p><p><br><u>You Write</u></p><p>He is <strong>happy</strong>.</p></td>
+      <td><h3><strong>A, An con Cosas y Palabras Descriptivas</strong></h3><p>Usa <em>an</em> cuando una cosa comienza con a, e, i, o, u.<br>Usa <em>a</em> cuando una cosa comienza con cualquier otra letra.</p><br><p>No coloques <em>a</em>, <em>an</em> o <em>the</em> antes de una sola palabra descriptiva.</p><br><p><u>Ves</u><br>Es <strong>a / an</strong> apple.</p><br><p><u>Escribes</u><br>Es <strong>an</strong> apple.</p><p><br><u>Ves</u></p><p>Él es <strong>happy / a happy</strong>.</p><p><br><u>Escribes</u></p><p>Él es <strong>happy</strong>.</p></td>
+      <td><strong>A, An con cosas y palabras descriptivas</strong><p>Utiliza <em>an</em> cuando algo comience con a, e, i, o o u.<br>Utiliza <em>a</em> cuando algo comience con cualquier otra letra.</p><br><p>No pongas <em>a</em>, <em>an</em> o <em>the</em> antes de una sola palabra descriptiva.</p><br><p><u>Esto ves</u><br>It is <strong>a / an</strong> apple.</p><br><p><u>Esto escribes</u><br>It is <strong>an</strong> apple.</p><p><br><u>Esto ves</u></p><p>He is <strong>happy / a happy</strong>.</p><p><br><u>Esto escribes</u></p><p>He is <strong>happy</strong>.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>A, An with Things and Describing Words</strong></h3><p>Use <em>an</em> when a thing starts with a, e, i, o, or u. </p><p>Use <em>a</em> when a thing starts with any other letter.</p><br><p><u>You See</u></p><p>It is <strong>a / an</strong> apple.</p><br><p><u>You Write</u></p><p>It is <strong>an</strong> apple.</p><br><p>Do not put <em>a</em>, <em>an</em>, or <em>the</em> before a single describing word.</p><br><p><u>You See</u></p><p>He is <strong>happy / a happy</strong>.</p><br><p><u>You Write</u></p><p>He is <strong>happy</strong>.</p></td>
+      <td><h3><strong>A, An con Cosas y Palabras Descriptivas</strong></h3><p>Usa <em>an</em> cuando una cosa comienza con a, e, i, o, u.</p><p>Usa <em>a</em> cuando una cosa comienza con cualquier otra letra.</p><br><p><u>Tú Ves</u></p><p>Es <strong>a / an</strong> apple.</p><br><p><u>Tú Escribe</u></p><p>Es <strong>an</strong> apple.</p><br><p>No coloques <em>a</em>, <em>an</em>, o <em>the</em> antes de una palabra descriptiva sola.</p><br><p><u>Tú Ves</u></p><p>Él es <strong>happy / a happy</strong>.</p><br><p><u>Tú Escribe</u></p><p>Él es <strong>happy</strong>.</p></td>
+      <td><strong>A, An con cosas y palabras descriptivas</strong><p>Utiliza <em>an</em> cuando algo comience con a, e, i, o o u. </p><p>Utiliza <em>a</em> cuando algo comience con cualquier otra letra.</p><br><p><u>Esto ves</u></p><p>It is <strong>a / an</strong> apple.</p><br><p><u>Esto escribes</u></p><p>It is <strong>an</strong> apple.</p><br><p>No pongas <em>a</em>, <em>an</em> ni <em>the</em> antes de una sola palabra descriptiva.</p><br><p><u>Esto ves</u></p><p>He is <strong>happy / a happy</strong>.</p><br><p><u>Esto escribes</u></p><p>He is <strong>happy</strong>.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Have, Do, and Go</strong></h3><p>The past tense of <em>have</em> is <em>had</em>.</p><p>I <strong>have</strong> a meeting yesterday. -&gt; I <strong>had</strong> a meeting yesterday.</p><br><p>The past tense of <em>do</em> is <em>did.</em></p><p><strong>Do</strong> you go to the store earlier? -&gt; <strong>Did</strong> you go to the store earlier?</p><br><p>The past tense of <em>go</em> is <em>went</em>.</p><p>She <strong>goes</strong> to the beach last week -&gt; She <strong>went</strong> to the beach last week.</p></td>
+      <td><h3><strong>Have, Do, y Go</strong></h3><p>El tiempo pasado de <em>have</em> es <em>had</em>.</p><p>Yo <strong>have</strong> una reunión ayer. -&gt; Yo <strong>had</strong> una reunión ayer.</p><br><p>El tiempo pasado de <em>do</em> es <em>did.</em></p><p><strong>Do</strong> tú vas a la tienda antes? -&gt; <strong>Did</strong> tú vas a la tienda antes?</p><br><p>El tiempo pasado de <em>go</em> es <em>went</em>.</p><p>Ella <strong>goes</strong> a la playa la semana pasada -&gt; Ella <strong>went</strong> a la playa la semana pasada.</p></td>
+      <td><strong>Have, Do, and Go</strong><p>El pasado de <em>have</em> es <em>had</em>.</p><p>I <strong>have</strong> a meeting yesterday. -&gt; I <strong>had</strong> a meeting yesterday.</p><br><p>El pasado de <em>do</em> es <em>did.</em></p><p><strong>Do</strong> you go to the store earlier? -&gt; <strong>Did</strong> you go to the store earlier?</p><br><p>El pasado de <em>go</em> es <em>went</em>.</p><p>She <strong>goes</strong> to the beach last week -&gt; She <strong>went</strong> to the beach last week.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>A / An</strong></h3><p>Put <strong>a</strong> or <strong>an</strong> before a person or thing.</p><br><p><u>You See</u></p><p>Is she <strong>teacher / a teacher</strong>?</p><br><p><u>You Write</u></p><p>Is she <strong>a teacher</strong>?</p></td>
+      <td><h3><strong>A / An</strong></h3><p>Coloca <strong>a</strong> o <strong>an</strong> antes de una persona o cosa.</p><br><p><u>Ves</u></p><p>¿Es ella <strong>teacher / a teacher</strong>?</p><br><p><u>Escribes</u></p><p>¿Es ella <strong>a teacher</strong>?</p></td>
+      <td><strong>A / An</strong><p>Coloca <strong>a</strong> o <strong>an</strong> antes de una persona o cosa.</p><br><p><u>Esto ves</u></p><p>Is she <strong>teacher / a teacher</strong>?</p><br><p><u>Esto escribes</u></p><p>Is she <strong>a teacher</strong>?</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong><em>The</em> Before People and Things</strong></h3><p>When you start a sentence with a thing, always put <em>the</em> before the thing.</p><br><p><u>You See</u></p><p><strong>House / The house</strong> is blue.</p><br><p><u>You Write</u></p><p><strong>The house</strong> is blue.</p></td>
+      <td><h3><strong><em>The</em> antes de personas y cosas</strong></h3><p>Cuando comiences una oración con una cosa, siempre coloca <em>the</em> antes de la cosa.</p><br><p><u>Ves</u></p><p><strong>House / The house</strong> es azul.</p><br><p><u>Escribes</u></p><p><strong>The house</strong> es azul.</p></td>
+      <td><strong><em>The</em> antes de personas y cosas</strong><p>Cuando comiences una oración con una cosa, siempre pon <em>the</em> antes de dicha cosa.</p><br><p><u>Esto ves</u></p><p><strong>House / The house</strong> is blue.</p><br><p><u>Esto escribes</u></p><p><strong>The house</strong> is blue.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong><em>The</em> Before People and Things</strong></h3><p>When you start a sentence with a thing, always put <em>the</em> before the thing.</p><br><p><u>You See</u></p><p><strong>House / The house</strong> is blue.</p><br><p><u>You Write</u></p><p><strong>The house</strong> is blue.</p></td>
+      <td><h3><strong><em>The</em> Antes de Personas y Cosas</strong></h3><p>Cuando comiences una oración con una cosa, siempre coloca <em>the</em> antes de la cosa.</p><br><p><u>Ves</u></p><p><strong>House / The house</strong> es azul.</p><br><p><u>Escribes</u></p><p><strong>The house</strong> es azul.</p></td>
+      <td><strong><em>The</em> antes de personas y cosas</strong><p>Cuando comiences una oración con una cosa, siempre pon <em>the</em> antes de dicha cosa.</p><br><p><u>Esto ves</u></p><p><strong>House / The house</strong> is blue.</p><br><p><u>Esto escribes</u></p><p><strong>The house</strong> is blue.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Say, Tell, Talk, and Ask</strong></h3><p><em>Say</em>, <em>tell</em>, <em>talk</em>, and <em>ask</em> are similar, but they are used in different situations.</p><br><p>You can <em>say</em> something to somebody.</p><p>You can <em>tell</em> somebody something.</p><p>You can <em>talk</em> to somebody.</p><p>You can <em>ask</em> somebody a question.</p><br><p><strong><u>You See</u></strong></p><p>Did you just ___ to your mom?</p><br><p><strong><u>You Write</u></strong></p><p>Did you just <strong>talk</strong> to your mom?</p></td>
+      <td><h3><strong>Decir, Contar, Hablar y Preguntar</strong></h3><p><em>Say</em>, <em>tell</em>, <em>talk</em> y <em>ask</em> son similares, pero se utilizan en situaciones diferentes.</p><br><p>Puedes <em>say</em> algo a alguien.</p><p>Puedes <em>tell</em> algo a alguien.</p><p>Puedes <em>talk</em> con alguien.</p><p>Puedes <em>ask</em> una pregunta a alguien.</p><br><p><strong><u>You See</u></strong></p><p>¿Acabas de ___ a tu mamá?</p><br><p><strong><u>You Write</u></strong></p><p>¿Acabas de <strong>talk</strong> con tu mamá?</p></td>
+      <td><strong>Say, Tell, Talk, and Ask</strong><p><em>Say</em>, <em>tell</em>, <em>talk</em> y <em>ask</em> son similares, pero se usan en diferentes situaciones: </p><br><p>You can <em>say</em> something to somebody.</p><p>You can <em>tell</em> somebody something.</p><p>You can <em>talk</em> to somebody.</p><p>You can <em>ask</em> somebody a question.</p><br><p><strong><u>Esto ves</u></strong></p><p>Did you just ___ to your mom?</p><br><p><strong><u>Esto escribes</u></strong></p><p>Did you just <strong>talk</strong> to your mom?</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Combining Sentences</strong></h3><p>When two sentences talk about the same person, you can combine them into one sentence. Use <em>and</em> to connect the two things about the person. </p><br><p>When there is only one of each thing, put <em>a</em> or <em>an</em> before both things.</p><br><p><u>You See</u> </p><p>She is a mother.</p><p>She is a doctor. </p><br><p><u>You Write</u> </p><p>She is a mother <strong>and</strong> a doctor.</p></td>
+      <td><h3><strong>Combinar Oraciones</strong></h3><p>Cuando dos oraciones hablan sobre la misma persona, puedes combinarlas en una sola oración. Usa <em>and</em> para conectar las dos cosas sobre la persona. </p><br><p>Cuando hay solo una de cada cosa, pon <em>a</em> o <em>an</em> antes de ambas cosas.</p><br><p><u>Tú Ves</u> </p><p>Ella es madre.</p><p>Ella es doctora. </p><br><p><u>Tú Escribe</u> </p><p>Ella es madre <strong>y</strong> doctora.</p></td>
+      <td><strong>Combinar oraciones</strong><p>Cuando dos oraciones hablen de la misma persona, puedes combinarlas en una sola. Utiliza <em>and</em> para unir dos cosas sobre una persona. </p><br><p>Cuando solo haya un elemento de cada cosa, pon <em>a</em> o <em>an</em> antes de ambas cosas.</p><br><p><u>Esto ves</u> </p><p>She is a mother.</p><p>She is a doctor. </p><br><p><u>Esto escribes</u> </p><p>She is a mother <strong>and</strong> a doctor.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Say, Tell, Talk, and Ask</strong></h3><p><em>Say</em>, <em>tell</em>, <em>talk</em>, and <em>ask</em> are similar, but they are used in different situations.</p><br><p>You can <em>say</em> something to somebody.</p><p>You can <em>tell</em> somebody something.</p><p>You can <em>talk</em> to somebody.</p><p>You can <em>ask</em> somebody a question.</p><br><p><strong><u>You See</u></strong></p><p>Did you just ___ to your mom?</p><br><p><strong><u>You Write</u></strong></p><p>Did you just <strong>talk</strong> to your mom?</p></td>
+      <td><h3><strong>Decir, Contar, Hablar y Preguntar</strong></h3><p><em>Say</em>, <em>tell</em>, <em>talk</em> y <em>ask</em> son similares, pero se utilizan en situaciones diferentes.</p><br><p>Puedes <em>say</em> algo a alguien.</p><p>Puedes <em>tell</em> algo a alguien.</p><p>Puedes <em>talk con alguien.</em></p><p><em>Puedes <em>ask</em> una pregunta a alguien.</em></p><em><br><p><strong><u>Tú Ves</u></strong></p><p>¿Acabas de ___ a tu mamá?</p><br><p><strong><u>Tú Escribes</u></strong></p><p>¿Acabas de <strong>talk</strong> a tu mamá?</p></em></td>
+      <td><strong>Say, Tell, Talk, and Ask</strong><p><em>Say</em>, <em>tell</em>, <em>talk</em> y <em>ask</em> son similares, pero se usan en diferentes situaciones: </p><br><p>You can <em>say</em> something to somebody.</p><p>You can <em>tell</em> somebody something.</p><p>You can <em>talk</em> to somebody.</p><p>You can <em>ask</em> somebody a question.</p><br><p><strong><u>Esto ves</u></strong></p><p>Did you just ___ to your mom?</p><br><p><strong><u>Esto escribes</u></strong></p><p>Did you just <strong>talk</strong> to your mom?</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Come, Eat, and Drink</strong></h3><p>The past tense of <em>come</em> is <em>came</em>.<br>I <strong>come</strong> home yesterday. -&gt; I <strong>came</strong> home yesterday.<br><br>The past tense of <em>eat</em> is <em>ate.</em><br>She <strong>eats</strong> cereal earlier. -&gt; She <strong>ate</strong> cereal earlier.</p><p><br>The past tense of <em>drink</em> is <em>drank</em>.<br>He <strong>drinks</strong> coffee this morning. -&gt; He <strong>drank</strong> coffee this morning.</p></td>
+      <td><h3><strong>Ven, Come y Bebe</strong></h3><p>El tiempo pasado de <em>come</em> es <em>came</em>.<br>Yo <strong>come</strong> a casa ayer. -&gt; Yo <strong>came</strong> a casa ayer.<br><br>El tiempo pasado de <em>eat</em> es <em>ate.</em><br>Ella <strong>eats</strong> cereal más temprano. -&gt; Ella <strong>ate</strong> cereal más temprano.</p><p><br>El tiempo pasado de <em>drink</em> es <em>drank</em>.<br>Él <strong>drinks</strong> café esta mañana. -&gt; Él <strong>drank</strong> café esta mañana.</p></td>
+      <td><strong>Come, Eat, and Drink</strong><p>El pasado de <em>come</em> es <em>came</em>.<br>I <strong>come</strong> home yesterday. -&gt; I <strong>came</strong> home yesterday.<br><br>El pasado de <em>eat</em> es <em>ate.</em><br>She <strong>eats</strong> cereal earlier. -&gt; She <strong>ate</strong> cereal earlier.</p><p><br>El pasado de <em>drink</em> es <em>drank</em>.<br>He <strong>drinks</strong> coffee this morning. -&gt; He <strong>drank</strong> coffee this morning.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Take, Give, and Get</strong></h3><p>The past tense of <em>take</em> is <em>took</em>.</p><p>I <strong>take</strong> a test yesterday. -&gt; I <strong>took</strong> a test yesterday.</p><br><p>The past tense of <em>give</em> is <em>gave.</em></p><p>She <strong>gives</strong> him a present earlier. -&gt; She <strong>gave</strong> him a present earlier.</p><br><p>The past tense of <em>get</em> is <em>got</em>.</p><p>They all <strong>get</strong> candy for Halloween. -&gt; They all <strong>got</strong> candy for Halloween.</p></td>
+      <td><h3><strong>Take, Give, and Get</strong></h3><p>El pasado de <em>take</em> es <em>took</em>.</p><p>Yo <strong>take</strong> un examen ayer. -&gt; Yo <strong>took</strong> un examen ayer.</p><br><p>El pasado de <em>give</em> es <em>gave.</em></p><p>Ella <strong>gives</strong> un regalo antes. -&gt; Ella <strong>gave un regalo antes.</strong></p><strong><br><p>El pasado de <em>get</em> es <em>got</em>.</p><p>Ellos todos <strong>get</strong> dulces para Halloween. -&gt; Ellos todos <strong>got</strong> dulces para Halloween.</p></strong></td>
+      <td><strong>Take, Give, and Get</strong><p>El pasado de <em>take</em> es <em>took</em>.</p><p>I <strong>take</strong> a test yesterday. -&gt; I <strong>took</strong> a test yesterday.</p><br><p>El pasado de <em>give</em> es <em>gave.</em></p><p>She <strong>gives</strong> him a present earlier. -&gt; She <strong>gave</strong> him a present earlier.</p><br><p>El pasado de <em>get</em> es <em>got</em>.</p><p>They all <strong>get</strong> candy for Halloween. -&gt; They all <strong>got</strong> candy for Halloween.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Using Can</strong></h3><p>To ask a question with <em>can</em>, put <em>can</em> first, the person second, and the action word third.</p><br><p><strong><u>You See</u></strong></p><p>___ ___ ___ peanuts?</p><br><p><strong><u>You Write</u></strong></p><p><strong>Can she eat</strong> peanuts?</p></td>
+      <td><h3><strong>Usando Can</strong></h3><p>Para hacer una pregunta con <em>can</em>, coloca <em>can</em> primero, la persona en segundo lugar y la palabra de acción en tercero.</p><br><p><strong><u>Tú Ves</u></strong></p><p>___ ___ ___ peanuts?</p><br><p><strong><u>Tú Escribe</u></strong></p><p><strong>Can she eat</strong> peanuts?</p></td>
+      <td><strong>Utilizar Can</strong><p>Para hacer preguntas con <em>can</em>, pon <em>can</em> primero, luego la persona y al final la palabra de acción.</p><br><p><strong><u>Esto ves</u></strong></p><p>___ ___ ___ peanuts?</p><br><p><strong><u>Esto escribes</u></strong></p><p><strong>Can she eat</strong> peanuts?</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>To Be</strong></h3><p><em>Be</em> is an action word. When you use <em>be</em> after a person or thing, you have to change <em>be</em> to <em>am</em>, <em>are</em>, or <em>is</em>.</p><br><p>I <em>am </em><br>You <em>are</em><br>He <em>is</em><br>She<em> is</em><br>It<em> is</em><br>We <em>are</em><br>They <em>are</em></p><br><p><u>You See</u><br>I ___ a kind teacher.</p><br><p><u>You Write</u><br>I <strong>am</strong> a kind teacher.</p></td>
+      <td><h3><strong>Ser</strong></h3><p><em>Be</em> es un verbo de acción. Cuando usas <em>be</em> después de una persona o cosa, debes cambiar <em>be</em> por <em>am</em>, <em>are</em> o <em>is</em>.</p><br><p>Yo <em>am</em><br>Tú <em>are</em><br>Él <em>is</em><br>Ella<em> is</em><br>Eso<em> is</em><br>Nosotros <em>are</em><br>Ellos <em>are</em></p><br><p><u>Tú Ves</u><br>Yo ___ un profesor amable.</p><br><p><u>Tú Escribes</u><br>Yo <strong>am</strong> un profesor amable.</p></td>
+      <td><strong>To Be</strong><p><em>Be</em> es una palabra de acción. Cuando utilices <em>be</em> después de una persona o cosa, tienes que cambiar <em>be</em> por <em>am</em>, <em>are</em> o <em>is</em>.</p><br><p>I <em>am </em><br>You <em>are</em><br>He <em>is</em><br>She<em> is</em><br>It<em> is</em><br>We <em>are</em><br>They <em>are</em></p><br><p><u>Esto ves</u><br>I ___ a kind teacher.</p><br><p><u>Esto escribes</u><br>I <strong>am</strong> a kind teacher.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Take, Give, and Get</strong></h3><p>The past tense of <em>take</em> is <em>took</em>.</p><p>I <strong>take</strong> a test yesterday. -&gt; I <strong>took</strong> a test yesterday.  </p><br><p>The past tense of <em>give</em> is <em>gave.</em> </p><p>She <strong>gives</strong> him a present earlier. -&gt; She <strong>gave</strong> him a present earlier. </p><br><p>The past tense of <em>get</em> is <em>got</em>. </p><p>They all <strong>get</strong> candy for Halloween. -&gt; They all <strong>got</strong> candy for Halloween.</p></td>
+      <td><h3><strong>Take, Give, and Get</strong></h3><p>El tiempo pasado de <em>take</em> es <em>took</em>.</p><p>Yo <strong>take</strong> un examen ayer. -&gt; Yo <strong>took</strong> un examen ayer.</p><br><p>El tiempo pasado de <em>give</em> es <em>gave</em>.</p><p>Ella <strong>gives</strong> a él un regalo antes. -&gt; Ella <strong>gave</strong> a él un regalo antes.</p><br><p>El tiempo pasado de <em>get</em> es <em>got</em>. </p><p>Todos ellos <strong>get</strong> dulces para Halloween. -&gt; Todos ellos <strong>got</strong> dulces para Halloween.</p></td>
+      <td><strong>Take, Give, and Get</strong><p>El pasado de <em>take</em> es <em>took</em>.</p><p>I <strong>take</strong> a test yesterday. -&gt; I <strong>took</strong> a test yesterday.  </p><br><p>El pasado de <em>give</em> es <em>gave.</em> </p><p>She <strong>gives</strong> him a present earlier. -&gt; She <strong>gave</strong> him a present earlier. </p><br><p>El pasado de <em>get</em> es <em>got</em>. </p><p>They all <strong>get</strong> candy for Halloween. -&gt; They all <strong>got</strong> candy for Halloween.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Action Phrase Meanings</strong></h3><p>All action phrases have different meanings, and sometimes the meanings are unexpected.</p><br><p><strong><u>You See</u></strong></p><p>I will <u>pick her up / put her away / back her up</u> from the airport later?</p><br><p><strong><u>You Write</u></strong></p><p>I will <strong>pick her up </strong>from the airport later?</p></td>
+      <td><h3><strong>Significados de Frases de Acción</strong></h3><p>Todas las frases de acción tienen diferentes significados, y a veces los significados son inesperados.</p><br><p><strong><u>Tú Ves</u></strong></p><p>Voy a <u>recogerla / guardarla / respaldarla</u> del aeropuerto más tarde?</p><br><p><strong><u>Tú Escribe</u></strong></p><p>Voy a <strong>recogerla</strong> del aeropuerto más tarde?</p></td>
+      <td><strong>Significados de las frases de acción</strong><p>Las frases de acción tienen diferentes significados y, a veces, estos son inesperados.</p><br><p><strong><u>Esto ves</u></strong></p><p>I will <u>pick her up / put her away / back her up</u> from the airport later?</p><br><p><strong><u>Esto escribes</u></strong></p><p>I will <strong>pick her up </strong>from the airport later?</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Action Phrase Meanings</strong></h3><p>All action phrases have different meanings, and sometimes the meanings are unexpected.</p><br><p><strong><u>You See</u></strong></p><p>I will <u>pick her up / put her away / back her up</u> from the airport later?</p><br><p><strong><u>You Write</u></strong></p><p>I will <strong>pick her up </strong>from the airport later?</p></td>
+      <td><h3><strong>Significados de Frases de Acción</strong></h3><p>Todas las frases de acción tienen diferentes significados, y a veces los significados son inesperados.</p><br><p><strong><u>Tú Ves</u></strong></p><p>Yo <u>pick her up / put her away / back her up</u> del aeropuerto más tarde?</p><br><p><strong><u>Tú Escribe</u></strong></p><p>Yo <strong>pick her up</strong> del aeropuerto más tarde?</p></td>
+      <td><strong>Significados de las frases de acción</strong><p>Las frases de acción tienen diferentes significados y, a veces, estos son inesperados.</p><br><p><strong><u>Esto ves</u></strong></p><p>I will <u>pick her up / put her away / back her up</u> from the airport later?</p><br><p><strong><u>Esto escribes</u></strong></p><p>I will <strong>pick her up </strong>from the airport later?</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Describing Things and Actions With Phrases</strong></h3><p>Give more information about a thing or action with phrases that start with words like <em>in, at, on, to, behind, about, toward, down, </em>and<em> after.  </em></p><br><p>Put the phrase right after the thing or action it’s describing. Do not use a comma.</p><p><br><strong><u>You See</u></strong></p><p>Julie baked bread ___ the oven. </p><br><p><strong><u>You Write</u></strong></p><p>Julie baked bread <strong>in</strong> the oven.</p></td>
+      <td><h3><strong>Describiendo cosas y acciones con frases</strong></h3><p>Proporciona más información sobre una cosa o acción con frases que comienzan con palabras como <em>in, at, on, to, behind, about, toward, down,</em> y<em> after.</em></p><br><p>Coloca la frase justo después de la cosa o acción que está describiendo. No uses coma.</p><p><br><strong><u>Tú Ves</u></strong></p><p>Julie horneó pan ___ el horno. </p><br><p><strong><u>Tú Escribe</u></strong></p><p>Julie horneó pan <strong>in</strong> el horno.</p></td>
+      <td><strong>Describir cosas y acciones con frases</strong><p>Proporciona más información sobre una cosa o acción añadiendo frases que comiencen con palabras como <em>in, at, on, to, behind, about, toward, down, </em>and<em>.  </em></p><br><p>Coloca la frase justo después de la cosa o acción que describe. No uses coma.</p><p><br><strong><u>Esto ves</u></strong></p><p>Julie baked bread ___ the oven. </p><br><p><strong><u>Esto escribes</u></strong></p><p>Julie baked bread <strong>in</strong> the oven.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Describing Things and Actions With Phrases</strong></h3><p>Give more information about a thing or action with phrases that start with words like <em>in, at, on, to, behind, about, toward, down, </em>and<em> after.</em></p><br><p>Put the phrase right after the thing or action it’s describing. Do not use a comma.</p><br><p><strong><u>You See</u></strong></p><p>Julie baked bread ___ the oven.</p><br><p><strong><u>You Write</u></strong></p><p>Julie baked bread <strong>in</strong> the oven.</p></td>
+      <td><h3><strong>Describiendo Cosas y Acciones con Frases</strong></h3><p>Brinda más información sobre una cosa o acción con frases que comienzan con palabras como <em>in, at, on, to, behind, about, toward, down, </em>y<em> after.</em></p><br><p>Coloca la frase justo después de la cosa o acción que está describiendo. No uses coma.</p><br><p><strong><u>Tú Ves</u></strong></p><p>Julie horneó pan ___ el horno.</p><br><p><strong><u>Tú Escribe</u></strong></p><p>Julie horneó pan <strong>en</strong> el horno.</p></td>
+      <td><strong>Describir cosas y acciones con frases</strong><p>Proporciona más información sobre una cosa o acción añadiendo frases que comiencen con palabras como <em>in, at, on, to, behind, about, toward, down, </em>and<em> after.</em></p><br><p>Coloca la frase justo después de la cosa o acción que describe. No uses coma.</p><br><p><strong><u>Esto ves</u></strong></p><p>Julie baked bread ___ the oven.</p><br><p><strong><u>Esto escribes</u></strong></p><p>Julie baked bread <strong>in</strong> the oven.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Say, Tell, and Hear</strong></h3><p>The past tense of <em>say</em> is <em>said</em>. </p><p>I <strong>say</strong> I wanted tacos for dinner. -&gt; I <strong>said</strong> I wanted tacos for dinner.</p><br><p>The past tense of <em>tell</em> is <em>told.</em> </p><p>She <strong>tells</strong> her mom something earlier. -&gt; She <strong>told</strong> her mom something earlier.</p><br><p>The past tense of <em>hear</em> is <em>heard</em>. </p><p>He <strong>hears</strong> Kyle singing this morning. -&gt; He <strong>heard</strong> Kyle singing this morning.</p></td>
+      <td><h3><strong>Say, Tell, and Hear</strong></h3><p>El pasado de <em>say</em> es <em>said</em>. </p><p>Yo <strong>say</strong> que quería tacos para cenar. -&gt; Yo <strong>said</strong> que quería tacos para cenar.</p><br><p>El pasado de <em>tell</em> es <em>told.</em> </p><p>Ella <strong>tells</strong> algo a su mamá más temprano. -&gt; Ella <strong>told</strong> algo a su mamá más temprano.</p><br><p>El pasado de <em>hear</em> es <em>heard</em>. </p><p>Él <strong>hears</strong> a Kyle cantar esta mañana. -&gt; Él <strong>heard</strong> a Kyle cantar esta mañana.</p></td>
+      <td><strong>SSay, Tell, and Hear</strong><p>El pasado de <em>say</em> es <em>said</em>. </p><p>I <strong>say</strong> I wanted tacos for dinner. -&gt; I <strong>said</strong> I wanted tacos for dinner.</p><br><p>El pasado de <em>tell</em> es <em>told.</em> </p><p>She <strong>tells</strong> her mom something earlier. -&gt; She <strong>told</strong> her mom something earlier.</p><br><p>El pasado de <em>hear</em> es <em>heard</em>. </p><p>He <strong>hears</strong> Kyle singing this morning. -&gt; He <strong>heard</strong> Kyle singing this morning.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Combining Sentences</strong></h3><p>When two sentences talk about the same person, you can combine them into one sentence. Use <em>and</em> to connect the two things about the person.  </p><br><p>When there is only one of each thing, put <em>a</em> or <em>an</em> before both things. </p><br><p><u>You See</u> </p><p>She has a dog.</p><p>She has a cat.  </p><br><p><u>You Write</u> </p><p>She has a dog <strong>and</strong> a cat.</p></td>
+      <td><h3><strong>Combinando Oraciones</strong></h3><p>Cuando dos oraciones hablan sobre la misma persona, puedes combinarlas en una sola oración. Usa <em>and</em> para conectar las dos cosas sobre la persona. </p><br><p>Cuando solo hay uno de cada cosa, coloca <em>a</em> o <em>an</em> antes de ambas cosas. </p><br><p><u>You See</u> </p><p>She has a dog.</p><p>She has a cat.  </p><br><p><u>You Write</u> </p><p>She has a dog <strong>and</strong> a cat.</p></td>
+      <td><strong>Combinar oraciones</strong><p>Cuando dos oraciones hablen de la misma persona, puedes combinarlas en una sola. Utiliza <em>and</em> para unir dos cosas sobre una persona.  </p><br><p>Cuando solo haya un elemento de cada cosa, pon <em>a</em> o <em>an</em> antes de ambas cosas. </p><br><p><u>Esto ves</u> </p><p>She has a dog.</p><p>She has a cat.  </p><br><p><u>Esto escribes</u> </p><p>She has a dog <strong>and</strong> a cat.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Combining Sentences</strong></h3><p>When two sentences talk about the same person, you can combine them into one sentence. Use <em>and</em> to connect the two things about the person.</p><p>When there is only one of each thing, put <em>a</em> or <em>an</em> before both things.</p><br><p><u>You See</u></p><p>She wants a brown dog.</p><p>She wants an orange cat.</p><br><p><u>You Write</u></p><p>She wants <strong>a</strong> brown dog <strong>and</strong> <strong>an</strong> orange cat.</p></td>
+      <td><h3><strong>Combinando Oraciones</strong></h3><p>Cuando dos oraciones hablan sobre la misma persona, puedes combinarlas en una sola oración. Usa <em>and</em> para conectar las dos cosas sobre la persona.</p><p>Cuando hay solo una de cada cosa, pon <em>a</em> o <em>an</em> antes de ambas cosas.</p><br><p><u>You See</u></p><p>She wants a brown dog.</p><p>She wants an orange cat.</p><br><p><u>You Write</u></p><p>She wants <strong>a</strong> brown dog <strong>and</strong> <strong>an</strong> orange cat.</p></td>
+      <td><strong>Combinar oraciones</strong><p>Cuando dos oraciones hablen de la misma persona, puedes combinarlas en una sola. Utiliza <em>and</em> para unir las dos cosas sobre la persona.</p><p>Cuando solo haya un elemento de cada cosa, pon <em>a</em> o <em>an</em> antes de ambas cosas.</p><br><p><u>Esto ves</u></p><p>She wants a brown dog.</p><p>She wants an orange cat.</p><br><p><u>Esto escribes</u></p><p>She wants <strong>a</strong> brown dog <strong>and</strong> <strong>an</strong> orange cat.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>For, With, To</strong></h3><p>Use these words in different situations:</p><br><p>Things are <em>for</em> people. </p><p>People are <em>with</em> people. </p><p>People go <em>to</em> places.</p><br><p>Examples:</p><p>It is <em>for</em> my mother.</p><p>I am <em>with</em> my friend.</p><p>I go <em>to</em> the park.</p><br><p><u><strong>You See</strong></u></p><p>She drives ___ work.</p><br><p><strong><u>You Write</u></strong></p><p>She drives <strong>to</strong> work.</p></td>
+      <td><h3><strong>For, With, To</strong></h3><p>Usa estas palabras en diferentes situaciones:</p><br><p>Las cosas son <em>for</em> las personas. </p><p>Las personas están <em>with</em> las personas. <!--,p--></p><p>Las personas van <em>to</em> los lugares.</p><br><p>Ejemplos:</p><p>Es <em>for</em> mi madre.</p><p>Estoy <em>with</em> mi amigo.</p><p>Voy <em>to</em> el parque.</p><br><p><u><strong>You See</strong></u></p><p>Ella va ___ al trabajo.</p><br><p><strong><u>You Write</u></strong></p><p>Ella va <strong>to</strong> al trabajo.</p></td>
+      <td><strong>For, With, To</strong><p>Utiliza estas palabras en diferentes situaciones:</p><br><p>Things are <em>for</em> people. </p><p>People are <em>with</em> people. </p><p>People go <em>to</em> places.</p><br><p>Ejemplos:</p><p>It is <em>for</em> my mother.</p><p>I am <em>with</em> my friend.</p><p>I go <em>to</em> the park.</p><br><p><u><strong>Esto ves</strong></u></p><p>She drives ___ work.</p><br><p><strong><u>Esto escribes</u></strong></p><p>She drives <strong>to</strong> work.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>A, An with Describing Words</strong></h3><p>Do not put <em>a</em>, <em>an</em>, or <em>the</em> before a single describing word.</p><br><p><u>You See</u></p><p>He is <strong>happy / a happy</strong>.</p><br><p><u>You Write</u></p><p>He is <strong>happy</strong>.</p></td>
+      <td><h3><strong>A, An con Palabras Descriptivas</strong></h3><p>No coloques <em>a</em>, <em>an</em> o <em>the</em> antes de una palabra descriptiva sola.</p><br><p><u>Ves</u></p><p>Él es <strong>happy / a happy</strong>.</p><br><p><u>Escribes</u></p><p>Él es <strong>happy</strong>.</p></td>
+      <td><strong>A, An con palabras descriptivas</strong><p>No pongas <em>a</em>, <em>an</em> o <em>the</em> antes de una sola palabra descriptiva.</p><br><p><u>Esto ves</u></p><p>He is <strong>happy / a happy</strong>.</p><br><p><u>Esto escribes</u></p><p>He is <strong>happy</strong>.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong><em>The</em> Before People and Things</strong></h3><p>When a sentence starts with a person or a thing, put <em>the</em> before the person or thing.</p><br><p><u>You See</u></p><p><strong>Car</strong> is red.</p><p>(<strong>the</strong>)</p><br><p><u>You Write</u></p><p><strong>The car</strong> is red.</p></td>
+      <td><h3><strong><em>The</em> antes de personas y cosas</strong></h3><p>Cuando una oración comienza con una persona o una cosa, coloca <em>the</em> antes de la persona o cosa.</p><br><p><u>Ves</u></p><p><strong>Car</strong> is red.</p><p>(<strong>the</strong>)</p><br><p><u>Escribes</u></p><p><strong>The car</strong> is red.</p></td>
+      <td><strong><em>The</em> antes de personas y cosas</strong><p>Cuando una oración comience con una persona o cosa, pon <em>the</em> antes de dicha persona o cosa.</p><br><p><u>Esto ves</u></p><p><strong>Car</strong> is red.</p><p>(<strong>the</strong>)</p><br><p><u>Esto escribes</u></p><p><strong>The car</strong> is red.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Combining Sentences</strong></h3><p>When two sentences talk about the same person, you can combine them into one sentence. Use <em>and</em> to connect the two things about the person.</p><br><p>When there is only one of each thing, put <em>a</em> or <em>an</em> before both things.</p><br><p><u>You See</u></p><p>She is a mother.</p><p>She is a doctor.</p><br><p><u>You Write</u></p><p>She is a mother <strong>and</strong> a doctor.</p></td>
+      <td><h3><strong>Combinando oraciones</strong></h3><p>Cuando dos oraciones hablan sobre la misma persona, puedes combinarlas en una sola oración. Usa <em>and</em> para conectar las dos cosas sobre la persona.</p><br><p>Cuando solo hay uno de cada cosa, coloca <em>a</em> o <em>an</em> antes de ambas cosas.</p><br><p><u>You See</u></p><p>She is a mother.</p><p>She is a doctor.</p><br><p><u>You Write</u></p><p>She is a mother <strong>and</strong> a doctor.</p></td>
+      <td><strong>Combinar oraciones</strong><p>Cuando dos oraciones hablen de la misma persona, puedes combinarlas en una sola. Utiliza <em>and</em> para unir las dos cosas sobre la persona.</p><br><p>Cuando solo haya un elemento de cada cosa, pon <em>a</em> o <em>an</em> antes de ambas cosas.</p><br><p><u>Esto ves</u></p><p>She is a mother.</p><p>She is a doctor.</p><br><p><u>Esto escribes</u></p><p>She is a mother <strong>and</strong> a doctor.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Using <em>a, an</em>, and <em>the</em></strong></h3><p>Use <em>a</em> or <em>an</em> before general things or things that have not been seen or talked about before.  </p><br><p>Use <em>the</em> before specific things or things that have already been mentioned. </p></td>
+      <td><h3><strong>Uso de <em>a, an</em> y <em>the</em></strong></h3><p>Usa <em>a</em> o <em>an</em> antes de cosas generales o cosas que no se han visto o mencionado antes.</p><br><p>Usa <em>the</em> antes de cosas específicas o cosas que ya han sido mencionadas.</p></td>
+      <td><strong>Utilizar <em>a, an</em> y <em>the</em></strong><p>Utiliza <em>a</em> o <em>an</em> antes de cosas generales o que no se han visto o no han sido mencionadas antes.  </p><br><p>Utiliza <em>the</em> antes de cosas específicas o que ya se han mencionado. </p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Combining Sentences</strong></h3><p>When two sentences talk about the same person, you can combine them into one sentence. Use <em>and</em> to connect the two things about the person. </p><p><br>When there is only one of each thing, put <em>a</em> or <em>an</em> before both things.</p><p><br><u>You See</u> </p><p>She wants a brown dog.</p><p>She wants an orange cat. </p><p><br><u>You Write</u> </p><p>She wants <strong>a</strong> brown dog <strong>and</strong> <strong>an</strong> orange cat.</p></td>
+      <td><h3><strong>Combinación de oraciones</strong></h3><p>Cuando dos oraciones hablan sobre la misma persona, puedes combinarlas en una sola oración. Usa <em>and</em> para conectar las dos cosas sobre la persona.</p><p><br>Cuando solo hay uno de cada cosa, coloca <em>a</em> o <em>an</em> antes de ambas cosas.</p><p><br><u>You See</u></p><p>Ella quiere un perro marrón.</p><p>Ella quiere un gato naranja.</p><p><br><u>You Write</u></p><p>Ella quiere <strong>a</strong> perro marrón <strong>and</strong> <strong>an</strong> gato naranja.</p></td>
+      <td><strong>Combinar oraciones</strong><p>Cuando dos oraciones hablen de la misma persona, puedes combinarlas en una sola. Utiliza <em>and</em> para unir dos cosas sobre una persona. </p><p><br>Cuando solo haya un elemento de cada cosa, pon <em>a</em> o <em>an</em> antes de ambas cosas.</p><p><br><u>Esto ves</u> </p><p>She wants a brown dog.</p><p>She wants an orange cat. </p><p><br><u>Esto escribes</u> </p><p>She wants <strong>a</strong> brown dog <strong>and</strong> <strong>an</strong> orange cat.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Combining Describing Sentences</strong></h3><p>When two sentences describe the same person, you can combine them into one sentence. Use <em>and</em> to connect the describing words.</p><br><p><u>You See</u></p><p>She is kind.</p><p>She is happy.</p><br><p><u>You Write</u></p><p>She is kind <strong>and</strong> happy.</p><br><br><p><em>If you want to study the vocabulary first, check out the vocabulary PDFs in the student center: https://www.quill.org/student-center/topic/student-how-to</em></p></td>
+      <td><h3><strong>Combinando oraciones descriptivas</strong></h3><p>Cuando dos oraciones describen a la misma persona, puedes combinarlas en una sola oración. Usa <em>and</em> para conectar las palabras descriptivas.</p><br><p><u>Ves</u></p><p>Ella es amable.</p><p>Ella está feliz.</p><br><p><u>Escribes</u></p><p>Ella es amable <strong>y</strong> feliz.</p><br><br><p><em>Si quieres estudiar el vocabulario primero, consulta los PDFs de vocabulario en el centro de estudiantes: https://www.quill.org/student-center/topic/student-how-to</em></p></td>
+      <td><strong>Combinar oraciones descriptivas</strong><p>Cuando dos oraciones describen a la misma persona, puedes combinarlas en una sola. Utiliza <em>and</em> para unir las palabras descriptivas.</p><br><p><u>Esto ves</u></p><p>She is kind.</p><p>She is happy.</p><br><p><u>Esto escribes</u></p><p>She is kind <strong>and</strong> happy.</p><br><br><p><em>Si quieres estudiar el vocabulario primero, consulta los archivos PDF del vocabulario en el centro de estudiantes: https://www.quill.org/student-center/topic/student-how-to</em></p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>To Be</strong></h3><p><em>Be</em> is an action word. When you use <em>be</em> after a person or thing, you have to change <em>be</em> to <em>am</em>, <em>are</em>, or <em>is</em>.</p><br><p>I <em>am </em><br>You <em>are</em><br>He <em>is</em><br>She<em> is</em><br>It<em> is</em><br>We <em>are</em><br>They <em>are</em></p><br><p><u>You See</u><br>I ___ kind.</p><br><p><u>You Write</u><br>I <strong>am</strong> kind.</p></td>
+      <td><h3><strong>Ser</strong></h3><p><em>Be</em> es un verbo de acción. Cuando usas <em>be</em> después de una persona o cosa, debes cambiar <em>be</em> a <em>am</em>, <em>are</em> o <em>is</em>.</p><br><p>Yo <em>am</em><br>Tú <em>are</em><br>Él <em>is</em><br>Ella <em>is</em><br>Eso <em>is</em><br>Nosotros <em>are</em><br>Ellos <em>are</em></p><br><p><u>You See</u><br>Yo ___ amable.</p><br><p><u>You Write</u><br>Yo <strong>am</strong> amable.</p></td>
+      <td><strong>To Be</strong><p><em>Be</em> es una palabra de acción. Cuando utilizas <em>be</em> después de una persona o cosa, tienes que cambiar <em>be</em> por <em>am</em>, <em>are</em> o <em>is</em>.</p><br><p>I <em>am </em><br>You <em>are</em><br>He <em>is</em><br>She<em> is</em><br>It<em> is</em><br>We <em>are</em><br>They <em>are</em></p><br><p><u>Esto ves</u><br>I ___ kind.</p><br><p><u>Esto escribes</u><br>I <strong>am</strong> kind.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>In, At, On</strong></h3><p>Use these words in different situations:</p><br><p>Things go <em>on</em> a surface. </p><p>Things go <em>in</em> a container or room. </p><p>Things are <em>at</em> a place.</p><br><p>It is <em>on</em> the table.</p><p>It is <em>in</em> the box.</p><p>It is <em>at</em> the park.</p><br><p><strong><u>You See</u></strong></p><p>My backpack is ___ school.</p><br><p><strong><u>You Write</u></strong></p><p>My backpack is <strong>at</strong> school.</p></td>
+      <td><h3><strong>In, At, On</strong></h3><p>Usa estas palabras en diferentes situaciones:</p><br><p>Las cosas van <em>on</em> una superficie. </p><p>Las cosas van <em>in</em> un contenedor o habitación. </p><p>Las cosas están <em>at</em> un lugar.</p><br><p>Está <em>on</em> la mesa.</p><p>Está <em>in</em> la caja.</p><p>Está <em>at</em> el parque.</p><br><p><strong><u>Tú Ves</u></strong></p><p>Mi mochila está ___ la escuela.</p><br><p><strong><u>Tú Escribes</u></strong></p><p>Mi mochila está <strong>at</strong> la escuela.</p></td>
+      <td><strong>In, At, On</strong><p>Utiliza estas palabras en diferentes situaciones:</p><br><p>Things go <em>on</em> a surface. </p><p>Things go <em>in</em> a container or room. </p><p>Things are <em>at</em> a place.</p><br><p>It is <em>on</em> the table.</p><p>It is <em>in</em> the box.</p><p>It is <em>at</em> the park.</p><br><p><strong><u>Esto ves</u></strong></p><p>My backpack is ___ school.</p><br><p><strong><u>Esto escribes</u></strong></p><p>My backpack is <strong>at</strong> school.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Combining Describing Sentences</strong></h3><p>When two sentences describe the same person, you can combine them into one sentence. Use <em>and</em> to connect the describing words.</p><p><br><u>You See</u> </p><p>She is kind.</p><p>She is happy.</p><p><br><u>You Write</u> </p><p>She is kind <strong>and</strong> happy.</p><br><br><p><em>If you want to study the vocabulary first, check out the vocabulary PDFs in the student center: https://www.quill.org/student-center/topic/student-how-to</em></p></td>
+      <td><h3><strong>Combinando oraciones descriptivas</strong></h3><p>Cuando dos oraciones describen a la misma persona, puedes combinarlas en una sola oración. Usa <em>and</em> para conectar las palabras descriptivas.</p><p><br><u>Ves</u> </p><p>Ella es amable.</p><p>Ella es feliz.</p><p><br><u>Escribes</u> </p><p>Ella es amable <strong>y</strong> feliz.</p><br><br><p><em>Si quieres estudiar el vocabulario primero, busca los PDFs de vocabulario en el centro de estudiantes: https://www.quill.org/student-center/topic/student-how-to</em></p></td>
+      <td><strong>Combinar oraciones descriptivas</strong><p>Cuando dos oraciones describen a la misma persona, puedes combinarlas en una sola. Utiliza <em>and</em> para unir las palabras descriptivas.</p><p><br><u>Esto ves</u> </p><p>She is kind.</p><p>She is happy.</p><p><br><u>Esto escribes</u> </p><p>She is kind <strong>and</strong> happy.</p><br><br><p><em>Si quieres estudiar el vocabulario primero, consulta los archivos PDF del vocabulario en el centro de estudiantes: https://www.quill.org/student-center/topic/student-how-to</em></p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Drive, Swim, and Run</strong></h3><p>The past tense of <em>drive</em> is <em>drove</em>.</p><p>I <strong>drive</strong> home yesterday. -&gt; I <strong>drove</strong> home yesterday.</p><br><p>The past tense of <em>swim</em> is <em>swam.</em></p><p>She <strong>swim </strong>in the pool earlier. -&gt; She <strong>swam </strong>in the pool earlier.</p><br><p>The past tense of <em>run</em> is <em>ran</em>.</p><p>He <strong>runs</strong> this morning. -&gt; He <strong>ran</strong> this morning.</p></td>
+      <td><h3><strong>Conducir, Nadar y Correr</strong></h3><p>El tiempo pasado de <em>drive</em> es <em>drove</em>.</p><p>Yo <strong>drive</strong> a casa ayer. -&gt; Yo <strong>drove</strong> a casa ayer.</p><br><p>El tiempo pasado de <em>swim</em> es <em>swam.</em></p><p>Ella <strong>swim </strong>en la piscina más temprano. -&gt; Ella <strong>swam </strong>en la piscina más temprano.</p><br><p>El tiempo pasado de <em>run</em> es <em>ran</em>.</p><p>Él <strong>runs esta mañana. -&gt; Él <strong>ran</strong> esta mañana.</strong></p></td>
+      <td><strong>Drive, Swim, and Run</strong><p>El pasado de <em>drive</em> es <em>drove</em>.</p><p>I <strong>drive</strong> home yesterday. -&gt; I <strong>drove</strong> home yesterday.</p><br><p>El pasado de <em>swim</em> es <em>swam.</em></p><p>She <strong>swim </strong>in the pool earlier. -&gt; She <strong>swam </strong>in the pool earlier.</p><br><p>El pasado de <em>run</em> es <em>ran</em>.</p><p>He <strong>runs</strong> this morning. -&gt; He <strong>ran</strong> this morning.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Drive, Swim, and Run</strong></h3><p>The past tense of <em>drive</em> is <em>drove</em>. </p><p>I <strong>drive</strong> home yesterday. -&gt; I <strong>drove</strong> home yesterday.  </p><br><p>The past tense of <em>swim</em> is <em>swam.</em> </p><p>She <strong>swim </strong>in the pool earlier. -&gt; She <strong>swam </strong>in the pool earlier.</p><br><p>The past tense of <em>run</em> is <em>ran</em>. </p><p>He <strong>runs</strong> this morning. -&gt; He <strong>ran</strong> this morning.</p></td>
+      <td><h3><strong>Conducir, Nadar y Correr</strong></h3><p>El pasado de <em>drive</em> es <em>drove</em>. </p><p>Yo <strong>drive</strong> a casa ayer. -&gt; Yo <strong>drove</strong> a casa ayer.  </p><br><p>El pasado de <em>swim</em> es <em>swam.</em> </p><p>Ella <strong>swim </strong>en la piscina más temprano. -&gt; Ella <strong>swam </strong>en la piscina más temprano.</p><br><p>El pasado de <em>run</em> es <em>ran</em>. </p><p>Él <strong>runs</strong> esta mañana. -&gt; Él <strong>ran</strong> esta mañana.</p></td>
+      <td><strong>Drive, Swim, and Run</strong><p>El pasado de <em>drive</em> es <em>drove</em>. </p><p>I <strong>drive</strong> home yesterday. -&gt; I <strong>drove</strong> home yesterday.  </p><br><p>El pasado de <em>swim</em> es <em>swam.</em> </p><p>She <strong>swim </strong>in the pool earlier. -&gt; She <strong>swam </strong>in the pool earlier.</p><br><p>El pasado de <em>run</em> es <em>ran</em>. </p><p>He <strong>runs</strong> this morning. -&gt; He <strong>ran</strong> this morning.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Have, Do, and Go</strong></h3><p>The past tense of <em>have</em> is <em>had</em>.</p><p>I <strong>have</strong> a meeting yesterday. -&gt; I <strong>had</strong> a meeting yesterday.</p><br><p>The past tense of <em>do</em> is <em>did.</em></p><p><strong>Do</strong> you go to the store earlier? -&gt; <strong>Did</strong> you go to the store earlier?</p><br><p>The past tense of <em>go</em> is <em>went</em>.</p><p>She <strong>goes</strong> to the beach last week -&gt; She <strong>went</strong> to the beach last week.</p></td>
+      <td><h3><strong>Have, Do, y Go</strong></h3><p>El tiempo pasado de <em>have</em> es <em>had</em>.</p><p>Yo <strong>have</strong> una reunión ayer. -&gt; Yo <strong>had</strong> una reunión ayer.</p><br><p>El tiempo pasado de <em>do</em> es <em>did.</em></p><p><strong>Do</strong> vas a la tienda más temprano? -&gt; <strong>Did</strong> vas a la tienda más temprano?</p><br><p>El tiempo pasado de <em>go</em> es <em>went</em>.</p><p>Ella <strong>goes</strong> a la playa la semana pasada -&gt; Ella <strong>went</strong> a la playa la semana pasada.</p></td>
+      <td><strong>Have, Do, and Go</strong><p>El pasado de <em>have</em> es <em>had</em>.</p><p>I <strong>have</strong> a meeting yesterday. -&gt; I <strong>had</strong> a meeting yesterday.</p><br><p>El pasado de <em>do</em> es <em>did.</em></p><p><strong>Do</strong> you go to the store earlier? -&gt; <strong>Did</strong> you go to the store earlier?</p><br><p>El pasado de <em>go</em> es <em>went</em>.</p><p>She <strong>goes</strong> to the beach last week -&gt; She <strong>went</strong> to the beach last week.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Say, Tell, and Hear</strong></h3><p>The past tense of <em>say</em> is <em>said</em>.</p><p>I <strong>say</strong> I wanted tacos for dinner. -&gt; I <strong>said</strong> I wanted tacos for dinner.</p><br><p>The past tense of <em>tell</em> is <em>told.</em></p><p>She <strong>tells</strong> her mom something earlier. -&gt; She <strong>told</strong> her mom something earlier.</p><br><p>The past tense of <em>hear</em> is <em>heard</em>.</p><p>He <strong>hears</strong> Kyle singing this morning. -&gt; He <strong>heard</strong> Kyle singing this morning.</p></td>
+      <td><h3><strong>Say, Tell, and Hear</strong></h3><p>El tiempo pasado de <em>say</em> es <em>said</em>.</p><p>Yo <strong>say</strong> que quería tacos para cenar. -&gt; Yo <strong>said</strong> que quería tacos para cenar.</p><br><p>El tiempo pasado de <em>tell</em> es <em>told.</em></p><p>Ella <strong>tells</strong> algo a su mamá antes. -&gt; Ella <strong>told</strong> algo a su mamá antes.</p><br><p>El tiempo pasado de <em>hear</em> es <em>heard</em>.</p><p>Él <strong>hears</strong> a Kyle cantando esta mañana. -&gt; Él <strong>heard</strong> a Kyle cantando esta mañana.</p></td>
+      <td><strong>Say, Tell, and Hear</strong><p>El pasado de <em>say</em> es <em>said</em>.</p><p>I <strong>say</strong> I wanted tacos for dinner. -&gt; I <strong>said</strong> I wanted tacos for dinner.</p><br><p>El pasado de <em>tell</em> es <em>told.</em></p><p>She <strong>tells</strong> her mom something earlier. -&gt; She <strong>told</strong> her mom something earlier.</p><br><p>El pasado de <em>hear</em> es <em>heard</em>.</p><p>He <strong>hears</strong> Kyle singing this morning. -&gt; He <strong>heard</strong> Kyle singing this morning.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>In, At, On</strong></h3><p>Use these words in different situations:</p><br><p>Things go <em>on</em> a surface.</p><p>Things go <em>in</em> a container or room.</p><p>Things are <em>at</em> a place.</p><br><p>It is <em>on</em> the table.</p><p>It is <em>in</em> the box.</p><p>It is <em>at</em> the park.</p><br><p><strong><u>You See</u></strong></p><p>My backpack is ___ school.</p><br><p><strong><u>You Write</u></strong></p><p>My backpack is <strong>at</strong> school.</p></td>
+      <td><h3><strong>In, At, On</strong></h3><p>Usa estas palabras en diferentes situaciones:</p><br><p>Las cosas van <em>on</em> una superficie.</p><p>Las cosas van <em>in</em> un contenedor o habitación.</p><p>Las cosas están <em>at</em> un lugar.</p><br><p>Está <em>on</em> la mesa.</p><p>Está <em>in</em> la caja.</p><p>Está <em>at</em> el parque.</p><br><p><strong><u>You See</u></strong></p><p>Mi mochila está ___ escuela.</p><br><p><strong><u>You Write</u></strong></p><p>Mi mochila está <strong>at</strong> escuela.</p></td>
+      <td><strong>In, At, On</strong><p>Utiliza estas palabras en diferentes situaciones:</p><br><p>Things go <em>on</em> a surface.</p><p>Things go <em>in</em> a container or room.</p><p>Things are <em>at</em> a place.</p><br><p>It is <em>on</em> the table.</p><p>It is <em>in</em> the box.</p><p>It is <em>at</em> the park.</p><br><p><strong><u>Esto ves</u></strong></p><p>My backpack is ___ school.</p><br><p><strong><u>Esto escribes</u></strong></p><p>My backpack is <strong>at</strong> school.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Using Can</strong></h3><p>To ask a question with <em>can</em>, put <em>can</em> first, the person second, and the action word third.</p><br><p><strong><u>You See</u></strong></p><p>___ ___ ___ peanuts?</p><br><p><strong><u>You Write</u></strong></p><p><strong>Can she eat</strong> peanuts?</p></td>
+      <td><h3><strong>Usando Can</strong></h3><p>Para hacer una pregunta con <em>can</em>, coloca <em>can</em> primero, la persona segundo y la palabra de acción tercero.</p><br><p><strong><u>Tú Ves</u></strong></p><p>___ ___ ___ peanuts?</p><br><p><strong><u>Tú Escribe</u></strong></p><p><strong>Can she eat</strong> peanuts?</p></td>
+      <td><strong>Utilizar Can</strong><p>Para hacer preguntas con <em>can</em>, pon <em>can</em> primero, luego la persona y al final la palabra de acción.</p><br><p><strong><u>Esto ves</u></strong></p><p>___ ___ ___ peanuts?</p><br><p><strong><u>Esto escribes</u></strong></p><p><strong>Can she eat</strong> peanuts?</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+  <tr>
+      <td><h3><strong>Using <em>a, an</em>, and <em>the</em></strong></h3><p>Use <em>a</em> or <em>an</em> before general things or things that have not been seen or talked about before.</p><br><p>Use <em>the</em> before specific things or things that have already been mentioned.</p></td>
+      <td><h3><strong>Uso de <em>a, an</em> y <em>the</em></strong></h3><p>Usa <em>a</em> o <em>an</em> antes de cosas generales o cosas que no se han visto o mencionado antes.</p><br><p>Usa <em>the</em> antes de cosas específicas o cosas que ya han sido mencionadas.</p></td>
+      <td><strong>Utilizar <em>a, an</em> y <em>the</em></strong><p>Utiliza <em>a</em> o <em>an</em> antes de cosas generales o que no se han visto o no han sido mencionadas antes.</p><br><p>Utiliza <em>the</em> antes de cosas específicas o que ya se han mencionado.</p><h3></h3></td>
+      <td>Activity prompt</td>
+  </tr>
+</tbody>
+</table>
+
+</div>
